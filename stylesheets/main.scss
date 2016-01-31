@@ -1,0 +1,15 @@
+$default-darkcyan: #008b8b;
+$font-stack: verdana;
+
+
+body{
+	background-color: $default-darkcyan;
+}
+
+h1{
+	font-family: $font-stack;
+	text-align: center;
+}
+
+@import 'navbar'
+// @import 'button'
