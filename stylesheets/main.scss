@@ -1,15 +1,53 @@
+// Here are some variables to use
 $default-darkcyan: #008b8b;
+$default-maroon: #800000;
+$default-orchid: #da70d6;
 $font-stack: verdana;
 
+// These are the mixins for color
+@mixin black($opac){
+	background-color: rgba(0,0,0,$opac);
+}
 
+@mixin white($opac){
+	background-color: rgba(255,255,255,$opac);
+}
+
+// My selectors that are using sass
 body{
 	background-color: $default-darkcyan;
 }
 
 h1{
 	font-family: $font-stack;
+	background-color: $default-maroon;
 	text-align: center;
 }
 
-@import 'navbar'
-// @import 'button'
+.para1{
+	@include black(0.5);
+	border: solid 4px green;
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+// I used the extend feature to share the same stylings
+// that the first paragraph used plus a little more
+// styling.
+.para2{
+	@extend .para1;
+	color: white; 
+}
+
+h3{
+	@include white(0.6);
+	font-family: $font-stack;
+	text-align: center;
+	color: $default-orchid;
+}
+
+// Here are my imports that bring in the partials
+// that will be used throughout the site.
+@import 'navbar';
+@import 'button';
