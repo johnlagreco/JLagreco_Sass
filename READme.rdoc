@@ -1,7 +1,1 @@
-Create a new project entirely from scratch with a main HTML file and a .scss file. Put some "dummy" content inside the HTML file and style it with SASS. Your assignment should meet the following criteria:
-
-- Use at least 5 selectors
-- Imports at least one "partial" file
-- Uses 2 variables
-- Has comments
-- Uses the @extend directive
+In this repository I created a dummy website using Sass style sheet language. In this Sass project, I used 5 selectors, 2 variables, the @extend directive and imported 2 "partial" files. I made some comments throughout the project to explain my code where Sass is used.
